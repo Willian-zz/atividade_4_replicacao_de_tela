@@ -12,20 +12,375 @@
 <body>   
     <main>
         <section class="container">
-            <div class="wide-div">
+            <div class="wide-div" id="welcome">
                 <img class="welcome-img" src="../assets/img/LeBron_Full_Portrait.webp" alt="LeBron James Multiversus">
                 <div class="welcome-text">
                     <h2>Olá, tudo bem?</h2>
                     <h2>Como posso <br>ajudar hoje?</h2>
                     <button class="help-button">
-                        <p>Fale comigo!</p>
-                        <i class="fa-solid fa-arrow-right"></i>
+                        <div class="btn-inside">
+                            <p>Fale comigo!</p>
+                            <i class="fa-solid fa-arrow-right welcome-btn"></i>
+                        </div>
+                    </button>
+                </div>
+                <div class="guide-btn">
+                    <button class="help-button" id="wide-btn">
+                        <div class="btn-inside">
+                            <p>QUERO COMPRAR MATERIAL</p>
+                            <i class="fa-solid fa-arrow-right welcome-btn"></i>
+                        </div>
+                    </button>
+
+                    <button class="help-button" id="wide-btn">
+                        <div class="btn-inside">
+                            <p>QUERO COMPRAR SERVIÇO</p>
+                            <i class="fa-solid fa-arrow-right welcome-btn"></i>
+                        </div>
+                    </button>
+
+                    <button class="help-button" id="wide-btn">
+                        <div class="btn-inside">
+                            <p>CONSULTAR FLUXO DE PROCESSOS</p>
+                            <i class="fa-solid fa-arrow-right welcome-btn"></i>
+                        </div>
+                    </button>
+
+                    <button class="help-button" id="wide-btn">
+                        <div class="btn-inside">
+                            <p>STATUS DAS MINHAS REQUISIÇÕES</p>
+                            <i class="fa-solid fa-arrow-right welcome-btn"></i>
+                        </div>
+                    </button>
+
+                    <button class="help-button" id="wide-btn">
+                        <div class="btn-inside">
+                            <p>NÃO SEI AO CERTO, ME AJUDE</p>
+                            <i class="fa-solid fa-arrow-right welcome-btn"></i>
+                        </div>
                     </button>
                 </div>
             </div>
 
-            <div class="short-div">
+            <div class="short-div" id="orders">
+                <div class="div-header">
+                    <span class="header-title"><strong>Status de pedidos recentes</strong></span>
+                    <div class="header-see-all">
+                        <p class="orders-text">Ver todos pedidos</p>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <table class="orders-info">
+                   <tr class="label">
+                         <th>N° Req.</th>
+                         <th>Data</th>
+                         <th>Valor</th>
+                         <th>Status</th>
+                    </tr> 
+                    <tr>
+                        <td>#125</td>
+                        <td>20/04/2020</td>
+                        <td>R$1250,67</td>
+                        <td><span class="status" id="approved">Processado</span></td>
+                    </tr>
+                    <tr>
+                        <td>#125</td>
+                        <td>20/04/2020</td>
+                        <td>R$1250,67</td>
+                        <td><span class="status" id="analysis">Análise</span></td>
+                    </tr>
+                    <tr>
+                        <td>#125</td>
+                        <td>20/04/2020</td>
+                        <td>R$1250,67</td>
+                        <td><span class="status" id="dennied">Negado</span></td>
+                    </tr>
+                    <tr>
+                        <td>#125</td>
+                        <td>20/04/2020</td>
+                        <td>R$1250,67</td>
+                        <td><span class="status" id="approved">Processado</span></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
 
+        <section class="container">
+            <div class="wide-div" id="last-orders">
+                <div class="div-header">
+                    <span class="header-title"><strong>Baseado em suas últimas compras</strong></span>
+                    <div class="header-see-all">
+                        <p class="orders-text">Ver todas as recomendações</p>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <div class="card">
+                        <img class="card-img" src="../assets/img/bola_wilson.webp" alt="Bola Wilson NBA">
+                        <div class="product-order">
+                            <div class="product-info">
+                                <p class="product-name">Bola Wilson</p>
+                                <p class="product-price">R$27,99</p>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../assets/img/tabela.png" alt="Tabela de basquete oficial">
+                        <div class="product-order">
+                            <div class="product-info">
+                                <p class="product-name">Tabela oficial</p>
+                                <p class="product-price">R$67,69</p>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../assets/img/tiagoat.png" alt="Foto de perfil Tiago Valentim NBB">
+                        <div class="product-order">
+                            <div class="product-info">
+                                <p class="product-name">GOAT</p>
+                                <p class="product-price">R$20,20</p>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../assets/img/gatorade.png" alt="Gatorade de Maracujá com Morango">
+                        <div class="product-order">
+                            <div class="product-info">
+                                <p class="product-name">Gatorade</p>
+                                <p class="product-price">R$7,90</p>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../assets/img/gui_santos.png" alt="Gui Santos com uniforme do GSW">
+                        <div class="product-order">
+                            <div class="product-info">
+                                <p class="product-name">Gui Santos</p>
+                                <p class="product-price">R$5000000,00</p>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../assets/img/stuff.webp" alt="Stuff Mascote Orlando Magic">
+                        <div class="product-order">
+                            <div class="product-info">
+                                <p class="product-name">Stuff</p>
+                                <p class="product-price">R$50,05</p>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="products-section">
+                    <div class="selection-ball" id="selected"></div>
+                    <div class="selection-ball"></div>
+                    <div class="selection-ball"></div>
+                    <div class="selection-ball"></div>
+                </div>
+            </div>
+
+            <div class="short-div" id="messages">
+                <div class="div-header">
+                    <span class="header-title"><strong>Mensagens e alertas</strong></span>
+                    <div class="header-see-all">
+                        <p class="orders-text">Ver todas mensagens</p>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="message-notification">
+                    <div class="message-main">
+                        <img class="message-img" src="../assets/img/lebron_profile.jpg" alt="LeBron James imagem de perfil">
+                        <div class="message-text">
+                            <p class="message-from"><strong>LeBron James</strong></p>
+                            <p class="message-content">Olá, meu Tiagão já está chegando?</p>
+                        </div>
+                    </div>
+                    <p class="message-date">Mar 19</p>
+                </div>
+                <div class="message-notification">
+                    <div class="message-main">
+                        <img class="message-img" src="../assets/img/bufunfa.enc" alt="Bufo imagem de perfil">
+                        <div class="message-text">
+                            <p class="message-from"><strong>Bufadas</strong></p>
+                            <p class="message-content">Esse gatorade tem álcool?</p>
+                        </div>
+                    </div>
+                    <p class="message-date">Mar 17</p>
+                </div>
+                <div class="message-notification">
+                    <div class="message-main">
+                        <img class="message-img" src="../assets/img/gaituco.jpeg" alt="Gaituco imagem de perfil">
+                        <div class="message-text">
+                            <p class="message-from"><strong>Gaituco Boler</strong></p>
+                            <p class="message-content">Boa tarde, vocês vendem parafuso?</p>
+                        </div>
+                    </div>
+                    <p class="message-date">Mar 15</p>
+                </div>
+                <div class="message-notification">
+                    <div class="message-main">
+                        <img class="message-img" src="../assets/img/calca_jeans.jpg" alt="Calça Jeans imagem de perfil">
+                        <div class="message-text">
+                            <p class="message-from"><strong>Calça jeans</strong></p>
+                            <p class="message-content">Oii, tem jogo?</p>
+                        </div>
+                    </div>
+                    <p class="message-date">Mar 14</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="wide-div">
+                <div class="div-header">
+                    <span class="header-title"><strong>Status das últimas requisições</strong></span>
+                    <div class="header-see-all">
+                        <p class="orders-text">Ver todos processos</p>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+
+                <div class="order-status">
+                    <div class="order-number">
+                        <p>N° Pedido</p>
+                        <p># 12345</p>
+                    </div>
+                    <div class="order-steps">
+                        <div class="step">
+                            <div class="order-circle" id="approved"><i class="fa-solid fa-check"></i></div>
+                            <p>Requisição</p>
+                        </div>
+                        <div class="step">
+                            <div class="order-circle" id="approved"><i class="fa-solid fa-check"></i></div>
+                            <p>Vendedor</p>
+                        </div>
+                        <div class="step">
+                            <div class="order-circle" id="analysis">3</div>
+                            <p>Cotação</p>
+                        </div>
+                        <div class="step">
+                            <div class="order-circle">4</div>
+                            <p>PO / CR</p>
+                        </div>
+                        <div class="step">
+                            <div class="order-circle">5</div>
+                            <p>Processado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-status">
+                    <div class="order-number">
+                        <p>N° Pedido</p>
+                        <p># 2169</p>
+                    </div>
+                    <div class="order-steps">
+                        <div class="step">
+                            <div class="order-circle" id="approved"><i class="fa-solid fa-check"></i></div>
+                            <p>Requisição</p>
+                        </div>
+                        <div class="step">
+                            <div class="order-circle" id="analysis">2</div>
+                            <p>Vendedor</p>
+                        </div>
+                        <div class="step">
+                            <div class="order-circle">3</div>
+                            <p>Cotação</p>
+                        </div>
+                        <div class="step">
+                            <div class="order-circle">4</div>
+                            <p>PO / CR</p>
+                        </div>
+                        <div class="step">
+                            <div class="order-circle">5</div>
+                            <p>Processado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-status">
+                    <div class="order-number">
+                        <p>N° Pedido</p>
+                        <p># 6767</p>
+                    </div>
+                    <div class="order-steps">
+                        <div class="step">
+                            <div class="order-circle" id="approved"><i class="fa-solid fa-check"></i></div>
+                            <p>Requisição</p>
+                        </div>
+                        <div class="step">
+                            <div class="order-circle" id="approved"><i class="fa-solid fa-check"></i></div>
+                            <p>Vendedor</p>
+                        </div>
+                        <div class="step">
+                            <div class="order-circle" id="analysis">3</div>
+                            <p>Cotação</p>
+                        </div>
+                        <div class="step">
+                            <div class="order-circle">4</div>
+                            <p>PO / CR</p>
+                        </div>
+                        <div class="step">
+                            <div class="order-circle">5</div>
+                            <p>Processado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="short-div">
+                <div class="div-header">
+                    <span class="header-title"><strong>Últimas transações e pedidos</strong></span>
+                    <div class="header-see-all">
+                        <p class="orders-text">Ver todas transações</p>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+
+                    <div class="products">
+                    <div class="card">
+                        <img class="card-img" src="../assets/img/bola_wilson.webp" alt="Bola Wilson NBA">
+                        <div class="product-order">
+                            <div class="product-info">
+                                <p class="product-name">Bola Wilson</p>
+                                <p class="product-price">R$27,99</p>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../assets/img/tabela.png" alt="Tabela de basquete oficial">
+                        <div class="product-order">
+                            <div class="product-info">
+                                <p class="product-name">Tabela oficial</p>
+                                <p class="product-price">R$67,69</p>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="../assets/img/tiagoat.png" alt="Foto de perfil Tiago Valentim NBB">
+                        <div class="product-order">
+                            <div class="product-info">
+                                <p class="product-name">GOAT</p>
+                                <p class="product-price">R$20,20</p>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-section">
+                    <div class="selection-ball" id="selected"></div>
+                    <div class="selection-ball"></div>
+                    <div class="selection-ball"></div>
+                    <div class="selection-ball"></div>
+                </div>
             </div>
         </section>
     </main>  
