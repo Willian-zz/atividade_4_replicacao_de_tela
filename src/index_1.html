@@ -1,26 +1,391 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página 1 SAP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../src/style_1.css">
-</head>
-<body>
-    
-    <main>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../src/style_1.css" />
+  </head>
+  <body>
+    <header>
+      <div class="path">
+        Component Customizing /SCMTMS/WDCC_FWD_ORDER. Main Page
+        "$OTR:/SCMTMS/UI_CMN/FORWARDING_ORDER"
+      </div>
+      <div class="load-bar"></div>
+      <div class="functions">
+        <button class="function-btn">
+          <i class="fa-solid fa-save function-btn-icon"></i>
+          <span class="function-btn-text">Salvar</span>
+        </button>
 
-          <div class="cabecalho">Component Customizing /SCMTMS/WDCC_FWD_ORDER, Main Page “$OTR:/SCMTMS/UI_CMN/FORWARDING_ORDER”</div>
-          
-          <section class="barra"
-    </main>
+        <div class="division-bar"></div>
 
-    <footer>
-        
-    </footer>
+        <div class="saving-functions function-group">
+          <button class="function-btn">
+            <i class="fa-solid fa-x function-btn-icon"></i>
+            <span class="function-btn-text">Cancelar</span>
+          </button>
+
+          <button class="function-btn">
+            <i class="fa-solid fa-pencil function-btn-icon"></i>
+            <span class="function-btn-text">Editar</span>
+          </button>
+
+          <button class="function-btn">
+            <i class="fa-solid fa-copy function-btn-icon"></i>
+            <span class="function-btn-text">Salvar draft</span>
+          </button>
+
+          <button class="function-btn">
+            <span class="function-btn-text">Carregar draft</span>
+          </button>
+        </div>
+
+        <div class="division-bar"></div>
+
+        <div class="refresh-redo-functions function-group">
+          <button class="function-btn">
+            <i class="fa-solid fa-arrows-rotate function-btn-icon"></i>
+          </button>
+
+          <button class="function-btn">
+            <i class="fa-solid fa-reply function-btn-icon"></i>
+            <span class="function-btn-text">Desfazer</span>
+          </button>
+
+          <button class="function-btn">
+            <i
+              class="fa-solid fa-reply function-btn-icon"
+              style="transform: scaleX(-1)"
+            ></i>
+            <span class="function-btn-text">Refazer</span>
+          </button>
+        </div>
+
+        <div class="division-bar"></div>
+
+        <button class="function-btn">
+          <span class="function-btn-text">Check</span>
+        </button>
+
+        <div class="division-bar"></div>
+
+        <div class="layout-options function-group">
+          <button class="function-btn">
+            <i class="bi bi-window-dock function-btn-icon"></i>
+          </button>
+
+          <button class="function-btn">
+            <i class="bi bi-layout-sidebar function-btn-icon"></i>
+          </button>
+
+          <button class="function-btn">
+            <i class="bi bi-layout-sidebar-reverse function-btn-icon"></i>
+          </button>
+        </div>
+
+        <div class="division-bar"></div>
+
+        <select name="additional-functions" id="additional-functions">
+          <option value="">Função adicional 1</option>
+          <option value="">LeBron James</option>
+          <option value="">Oi Ewerton</option>
+          <option value="">Calça jeans</option>
+        </select>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="left-side">
+        <div class="container-header">
+          <div class="header-section">
+            <p class="header-text active">Navegação</p>
+            <p class="header-text">Repositórios</p>
+          </div>
+          <i class="fa-solid fa-folder" style="color: black;"></i>
+        </div>
+        <div class="functions">
+            <div class="function-group">
+                <button class="function-btn">
+                  <i class="fa-solid fa-file function-btn-icon"></i>
+                  <span class="function-btn-text">Novo</span>
+                </button>
+      
+                <button class="function-btn">
+                  <i class="fa-solid fa-trash function-btn-icon"></i>
+                </button>
+      
+                <button class="function-btn">
+                  <i class="fa-solid fa-copy function-btn-icon"></i>
+                </button>
+            </div>
+
+          <div class="division-bar"></div>
+
+          <div class="function-group">
+              <button class="function-btn">
+                <span class="function-btn-text">Subir</span>
+              </button>
     
-</body>
+              <button class="function-btn">
+                <span class="function-btn-text">Descer</span>
+              </button>
+          </div>
+
+          <button class="function-btn" style="margin-left: auto; margin-right: 0;">
+            <i class="fa-solid fa-wrench function-btn-icon"></i>
+          </button>
+        </div>
+
+        <table>
+            <tr class="table-header">
+                <th>Tipo de página</th>
+                <th>ID da página</th>
+                <th>Título</th>
+            </tr>
+            <tr>
+                <td>Página inicial</td>
+                <td>INIT</td>
+                <td>$OTR:/SCMTMS/UI_CMN</td>
+            </tr>
+            <tr>
+                <td>Página principal</td>
+                <td>MAIN</td>
+                <td>$OTR:/SCMTMS/UI_CMN</td>
+            </tr>
+            <tr>
+                <td>Página principal</td>
+                <td>MAIN_FAST_ENASADASD</td>
+                <td>$OTR:/SCMTMS/UI_CMN</td>
+            </tr>
+            <tr>
+                <td>Caixa de diálogo</td>
+                <td>ADDRESS_DETONATION</td>
+                <td>$OTR:/SCMTMS/UI_CMN</td>
+            </tr>
+            <tr>
+                <td>Caixa de diálogo</td>
+                <td>ACT_LIST</td>
+                <td>$OTR:/SCMTMS/UI_CMN</td>
+            </tr>
+            <tr class="table-active">
+                <td>Caixa de diálogo</td>
+                <td>SEC_FILING_ROW</td>
+                <td>$OTR:/BOFUNS/UI_CMN</td>
+            </tr>
+            <tr>
+                <td>Caixa de diálogo</td>
+                <td>SEC_FILING_COLUMN</td>
+                <td>$OTR:/SCMTMS/UI_CMN</td>
+            </tr>
+        </table>
+      </div>
+      <div class="right-side">
+        <div class="top-right-side">
+            <div class="container-header">
+                <div class="header-section">
+                    <i class="fa-solid fa-caret-down circle" style="color: black;"></i>
+                    <p class="header-text active">Esquema de Visão da Página</p>
+                    <p class="header-text">Esquema de Barra de Tarefas</p>
+                    <p class="header-text">Esquema de Fios</p>
+                </div>
+                <i class="fa-solid fa-folder" style="color: black;"></i>
+            </div>
+
+            <div class="functions">
+                <div class="function-group">
+                    <button class="function-btn">
+                      <i class="fa-solid fa-file-circle-plus function-btn-icon"></i>
+                      <span class="function-btn-text">Área da Página Mestre</span>
+                    </button>
+    
+                    <button class="function-btn">
+                      <i class="fa-solid fa-file-circle-plus function-btn-icon"></i>
+                      <span class="function-btn-text">Seção</span>
+                    </button>
+    
+                    <button class="function-btn">
+                      <i class="fa-solid fa-file-circle-plus function-btn-icon"></i>
+                      <span class="function-btn-text">UIBB</span>
+                    </button>
+    
+                    <button class="function-btn">
+                      <i class="fa-solid fa-trash function-btn-icon"></i>
+                    </button>
+                </div>
+
+                <div class="division-bar"></div>
+
+                <div class="function-group">
+                    <button class="function-btn">
+                        <span class="function-btn-text">Subir</span>
+                    </button>
+            
+                    <button class="function-btn">
+                        <span class="function-btn-text">Descer</span>
+                    </button>
+                </div>
+            </div>
+            <table>
+            <tr class="table-header">
+                <th>Elemento</th>
+                <th>Componente</th>
+                <th>ID de Configuração</th>
+                <th>Nome da Janela</th>
+            </tr>
+            <tr>
+                <td>
+                    <i class="fa-solid fa-caret-down" style="color: black; margin-right: 10px;"></i>
+                    <i class="bi bi-columns" style="color: green;"></i>
+                    Seção: SEÇÃO_1
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 50px;">
+                    <i class="bi bi-columns" style="color: orange;"></i>
+                    UIBB: $OTR:/SCMTMS/UI_CMN
+                </td>
+                <td>FPM_FORM_UIBB_GL2</td>
+                <td>/SCMTMS/WDCC_FWO_GEN</td>
+                <td>FORM_WINDOW</td>
+            </tr>
+            <tr class="table-active">
+                <td style="padding-left: 50px;">
+                    <i class="bi bi-columns" style="color: orange;"></i>
+                    UIBB: $OTR:/SCMTMS/UI_CMN
+                </td>
+                <td>FPM_FORM_UIBB_GL2</td>
+                <td>/SCMTMS/WDCC_CMN_ADMINDATA</td>
+                <td>FORM_WINDOW</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 50px;">
+                    <i class="bi bi-columns" style="color: orange;"></i>
+                    UIBB: $OTR:/SCMTMS/UI_CMN
+                </td>
+                <td>FPM_TABBED_UIBB</td>
+                <td>/SCMTMS/WDCC_TRQ_BUPA</td>
+                <td>TABBED_WINDOW</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 50px;">
+                    <i class="bi bi-columns" style="color: orange;"></i>
+                    UIBB: $OTR:/SCMTMS/UI_CMN
+                </td>
+                <td>FPM_TREE_UIBB</td>
+                <td>/SCMTMS/WDCC_DOC_FLOW</td>
+                <td>TREE_WINDOW</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 50px;">
+                    <i class="bi bi-columns" style="color: orange;"></i>
+                    UIBB: $OTR:/SCMTMS/UI_CMN
+                </td>
+                <td>FPM_TABBED_UIBB</td>
+                <td>/SCMTMS/WDCC_TCM_CHARGES_TA</td>
+                <td>TABBED_WINDOW</td>
+            </tr>
+        </table>
+        </div>
+
+        <div class="bottom-right-side">
+            <div class="container-header">
+                <p class="header-text active">Attributes of UIBB: $OTR:/SCMTMS/UI_CMN/ADM_INFO</p>
+                <button class="header-button">Final Flags</button>
+            </div>
+            <div class="attributes-section">
+                <div class="attributes">
+                    <div class="attributes-group">
+                        <p class="attributes-label mandatory">Nome da Janela</p>
+                        <input type="text">
+                    </div>
+                    <div class="attributes-group">
+                        <p class="attributes-label">ID de configuração</p>
+                        <input type="text">
+                    </div>
+                    <div class="attributes-group">
+                        <p class="attributes-label">ID da instância</p>
+                        <input type="text">
+                    </div>
+                    <div class="attributes-group">
+                        <p class="attributes-label">Coluna</p>
+                        <input type="number">
+                    </div>
+                    <div class="attributes-group">
+                        <p class="attributes-label">Número da fileira</p>
+                        <input type="number">
+                    </div>
+                    <div class="attributes-group">
+                        <p class="attributes-label">Sequencia de índice</p>
+                        <input type="text">
+                    </div>
+                    <div class="attributes-group">
+                        <p class="attributes-label">Padrão</p>
+                        <input type="text">
+                    </div>
+                    <div class="attributes-group">
+                        <p class="attributes-label">Elemento escondido</p>
+                        <select name="hidden-element" id="">
+                            <option value="">Visível</option>
+                            <option value="">Escondido e Excluído do Loop</option>
+                            <option value="">Escondido e Processado do Loop</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="attributes">
+                    <div class="attributes-group">
+                        <p class="attributes-label mandatory">Nome da Janela</p>
+                        <input type="text">
+                    </div>
+                    <div class="attributes-group">
+                        <p class="attributes-label">ID de configuração</p>
+                        <input type="text">
+                    </div>
+                    <div class="attributes-group">
+                        <p class="attributes-label">ID da instância</p>
+                        <input type="text">
+                    </div>
+                    <div class="attributes-group">
+                        <p class="attributes-label">Coluna</p>
+                        <input type="number">
+                    </div>
+                    <div class="attributes-group">
+                        <p class="attributes-label">Número da fileira</p>
+                        <input type="number">
+                    </div>
+                    <div class="attributes-group">
+                        <p class="attributes-label">Sequencia de índice</p>
+                        <input type="text">
+                    </div>
+                    <div class="attributes-group">
+                        <p class="attributes-label">Padrão</p>
+                        <input type="text">
+                    </div>
+                    <div class="attributes-group">
+                        <p class="attributes-label">Elemento escondido</p>
+                        <select name="hidden-element" id="">
+                            <option value="">Visível</option>
+                            <option value="">Escondido e Excluído do Loop</option>
+                            <option value="">Escondido e Processado do Loop</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
